@@ -178,7 +178,7 @@ requestAnimationFrame(frame)
 
 async function start() {
   room = await connect<PlayerNetState>({
-    url: GENEX.colyseusUrl,
+    urls: [GENEX.colyseusUrl],
     room: GENEX.slug,
     name: playerName,
   })
